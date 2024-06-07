@@ -1,0 +1,33 @@
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+bin/
+obj/
+
+# Ignore model files
+*.pt
+
+# Ignore layout files
+*.layout
+
+# Ignore virtual environment
+.venv/
+.bonsai/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore user-specific files
+.idea/
+.vscode/
