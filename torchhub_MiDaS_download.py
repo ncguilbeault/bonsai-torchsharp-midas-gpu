@@ -9,4 +9,4 @@ example_input = torch.rand(1, 3, 256, 256)
 with torch.no_grad():
     o1 = midas(example_input)
     traced_model = torch.jit.trace(midas, example_input)
-    traced_model.save("model/MiDaS.pt")
+    traced_model.save("models/MiDaS.pt")
