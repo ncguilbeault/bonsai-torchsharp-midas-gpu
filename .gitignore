@@ -11,9 +11,6 @@ dist/
 bin/
 obj/
 
-# Ignore model files
-*.pt
-
 # Ignore layout files
 *.layout
 
