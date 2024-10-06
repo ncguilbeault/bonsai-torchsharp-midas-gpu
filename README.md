@@ -2,6 +2,16 @@
 
 This repo provides a working example for how to download a pretrained model from [torch hub](https://pytorch.org/hub/), and run online inference on the GPU using Bonsai on Linux.
 
+# Dependencies
+
+* Bonsai installation on Linux [follow guide here](https://github.com/orgs/bonsai-rx/discussions/1101)
+* [dotnet-sdk (v8)](https://dotnet.microsoft.com/en-us/download)
+* libtorch libraries installed globally
+* [python v3.10](https://www.python.org/downloads/)
+
+>[!TIP]
+>It is highly recommended to use containerized environments for this setup (e.g. python venv, bonsai environment tool, docker environments)
+
 # How to run
 
 Clone and cd to the repo. Afterwards, create a python virtual environment with torch installed. You can do this with:

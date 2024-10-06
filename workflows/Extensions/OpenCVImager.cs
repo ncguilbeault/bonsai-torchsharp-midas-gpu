@@ -38,8 +38,6 @@ namespace MidasTorchModel
 
                 var imageBytes = ToBytes(image);
 
-                var tensor = torch.tensor(imageBytes).reshape(new long[] {channels, height, width});
-
                 for (int y = 0; y < height; y++)
                 {
                     for (int x = 0; x < width; x++)
@@ -57,7 +55,7 @@ namespace MidasTorchModel
                 Tensor tensorG = torch.tensor(arrayG, new long[] { 1, image.Height, image.Width });
                 Tensor tensorB = torch.tensor(arrayB, new long[] { 1, image.Height, image.Width });
 
-                tensor = cat(new Tensor[] { tensorR, tensorG, tensorB }, 0);
+                var tensor = cat(new Tensor[] { tensorR, tensorG, tensorB }, 0);
 
                 return tensor.MoveToOuterDisposeScope();
             }
